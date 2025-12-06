@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLID Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>SOLID Demo</h1>
+
+      <div class="controls">
+        <select id="shapeType">
+          <option value="circle">Круг</option>
+          <option value="square">Квадрат</option>
+          <option value="triangle">Треугольник</option>
+        </select>
+
+        <input type="number" id="shapeSize" value="50" min="10" max="100" />
+
+        <button id="addBtn">Добавить фигуру</button>
+      </div>
+
+      <div class="stats">
+        <div>Фигур: <span id="count">0</span></div>
+        <div>Общая площадь: <span id="area">0</span></div>
+      </div>
+
+      <div id="shapesList"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
